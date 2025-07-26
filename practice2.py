@@ -28,7 +28,8 @@ def index():
         memo_list_html += f"<li>{memo['memo_text']} ({display_time}) <a href='/delete/{memo['memo_id']}'>削除</a></li>"
 
     form_html=f"""
-    <h1>Simple Memo App</h1>
+   # この行を変更
+    <h1>Simple Memo App (with DynamoDB) V2</h1>
     <form action="/add" method="post">
         <input type="text" name="memo" size="40" placeholder="メモを入力">
         <button type="submit">Add</button>
